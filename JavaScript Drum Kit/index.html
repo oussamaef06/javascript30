@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="drum-kit">
+        <div data-key="65" class="drum-key">
+            <kbd>A</kbd>
+            <span class="sound">kick</span>
+        </div>
+        <div data-key="83" class="drum-key">
+            <kbd>S</kbd>
+            <span class="sound">snare</span>
+        </div>
+        <div data-key="68" class="drum-key">
+            <kbd>D</kbd>
+            <span class="sound">hi-hat</span>
+        </div>
+        <!-- Add more keys as needed -->
+    </div>
+
+    <audio data-key="65" src="sounds/kick.wav"></audio>
+    <audio data-key="83" src="sounds/snare.wav"></audio>
+    <audio data-key="68" src="sounds/hihat.wav"></audio>
+    <!-- Add more audio files as needed -->
+
+    <script src="script.js"></script>
+</body>
+</html>
