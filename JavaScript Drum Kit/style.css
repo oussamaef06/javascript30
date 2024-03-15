@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    margin: 0;
+}
+
+.drum-kit {
+    display: flex;
+    gap: 10px;
+}
+
+.drum-key {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.07s ease;
+}
+
+.drum-key:active, .drum-key.playing {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+kbd {
+    display: block;
+    font-size: 16px;
+}
