@@ -14,5 +14,25 @@
             <div class="hand second-hand"></div>
         </div>
     </div>
+
+    <script>
+        const secondHand = document.querySelector('.second-hand');
+        const minHand = document.querySelector('.min-hand');
+    
+        function setDate(){
+            const now = new Date();
+            const second = now.getSeconds();
+            const secondsDegrees = ((second/60) * 360) + 90;
+
+            const minut = now.getMinutes();
+            const minutesDegrees = ((minut/60) * 60) + 90;
+            
+            
+            secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+            minHand.style.transform = `rotate(${minutesDegrees}deg)`;
+            
+        }
+        setInterval(setDate, 1000);
+    </script>
 </body>
 </html>
